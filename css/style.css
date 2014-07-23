@@ -1,0 +1,147 @@
+#pcomment_filter {
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	opacity: 0.5;
+	background-color: #000;
+	z-index: 99999;
+}
+
+#pcomment_popup {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	overflow: auto;
+	z-index: 999999;
+}
+#pcomment_popup ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+#pcomment_popup li {
+	margin: 10px 0px;
+}
+#pcomment_popup li p {
+	float: none;
+	display: block;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+#pcomment_popup #comment_list {
+	width: 95%;
+	margin: 0 auto;
+	border: 1px solid #aaa;
+}
+#pcomment_popup #talk li {
+	margin: 10px 0px;
+	padding: 0px 5px;
+}
+#pcomment_popup .comment_info {
+	width: 100%;
+}
+#pcomment_popup .comment_author {
+	float: left;
+	font-size: 100%;
+	color: #00f;
+}
+#pcomment_popup .comment_time {
+	float: right;
+	font-size: 90%;
+	color: #999;
+}
+#pcomment_popup #respond {
+	border-top: 1px solid #aaa;
+	background-color: #eee;
+}
+#pcomment_popup #respond:after {
+	content: ".";   
+	display: block;   
+	height: 0;   
+	clear: both;   
+	visibility: hidden;
+}
+#pcomment_popup #comment_form {
+	width: 95%;
+	margin: 0px auto;
+}
+#pcomment_popup #comment_body {
+	display: block;
+	width: 95%;
+	height: 40px;
+	margin: 0px auto;
+	color: #999;
+}
+#pcomment_popup .form-submit {
+	margin: 0px;
+}
+#pcomment_popup #submit {
+	display: block;
+	float: right;
+	margin: 10px;
+	padding: 5px 10px;
+	border: 1px solid #aaf;
+	border-radius: 0px;
+	background-color: #aaf;
+	cursor: pointer;
+}
+
+.pcomment_p {
+	margin: 1em 0px;
+}
+.pcomment_p:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.pcomment_innerp {
+	float: left;
+	width: 70%;
+	margin: 0px;
+}
+.pcomment_commentbar {
+	float: right;
+	width: 29%;
+	min-height: 1em;
+	border: 1px solid #fff;
+	overflow: auto;
+	padding: 3px;
+	cursor: pointer;
+}
+.pcomment_commentbar:hover {
+	border: 1px solid #ccc;
+	background-color: #f9f9f9;
+}
+.pcomment_commentbar::-webkit-scrollbar  {
+	display: block;
+	width: 6px;
+}
+.pcomment_commentbar::-webkit-scrollbar-thumb {
+	background-color: #aaa;
+	border-radius: 3px;
+}
+.pcomment_json {
+	display: none;
+}
+.pcomment_list {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+.pcomment_author {
+	font-size: small;
+	color: #999;
+}
+.pcomment_content {
+	margin: 0px 5px;
+	font-size: 90%;
+}
